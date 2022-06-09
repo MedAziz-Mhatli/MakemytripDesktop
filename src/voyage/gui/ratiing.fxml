@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+<?import org.controlsfx.control.Rating?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllor.RatiingController">
+   <children>
+      <Text layoutX="236.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Evaluer votre Hotel" wrappingWidth="193.13671875" />
+      
+      <Button fx:id="btnevall" layoutX="274.0" layoutY="175.0" mnemonicParsing="false" onAction="#evaluer" text="Evaluer" />
+      <Rating fx:id="ratin" layoutX="212.0" layoutY="106.0" rating="0.0" />
+   </children>
+</AnchorPane>

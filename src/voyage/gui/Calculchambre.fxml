@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="voyage.gui.CalculchambreController">
+   <children>
+      <Label layoutX="264.0" layoutY="166.0" prefHeight="17.0" prefWidth="48.0" text="Hotel" />
+      <Button fx:id="tfc" layoutX="498.0" layoutY="162.0" mnemonicParsing="false" onAction="#calculerch" text="Calculer" />
+      <ComboBox fx:id="cmbo" layoutX="329.0" layoutY="162.0" prefWidth="150.0" promptText="Selectioneé" />
+      <VBox layoutX="-2.0" prefHeight="400.0" prefWidth="205.0" style="-fx-background-color: #87CEFA;">
+         <children>
+            <Pane prefHeight="169.0" prefWidth="205.0">
+               <children>
+                  <ImageView fitHeight="135.0" fitWidth="200.0" layoutX="3.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../edu/voyage/assets/double.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+      <Pane layoutX="272.0" layoutY="114.0" prefHeight="11.0" prefWidth="315.0" style="-fx-background-color: #87CEFA;" />
+      <Text fill="#554c57" layoutX="213.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="le nombre des chambres single  et le nombre double" wrappingWidth="473.13671875">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

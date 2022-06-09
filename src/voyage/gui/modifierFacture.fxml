@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="489.0" prefWidth="540.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="voyage.gui.ModifierFactureController">
+   <children>
+      <VBox layoutX="80.0" layoutY="67.0" prefHeight="285.0" prefWidth="381.0" spacing="25.0">
+         <children>
+            <HBox prefHeight="30.0" prefWidth="381.0" />
+            <HBox prefHeight="40.0" prefWidth="381.0">
+               <children>
+                  <Label prefHeight="27.0" prefWidth="160.0" text="Date de facture :">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="32.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../edu/voyage/image/DatePicker.png" />
+                     </image>
+                  </ImageView>
+                  <DatePicker fx:id="TFMdateFacture" prefHeight="31.0" prefWidth="251.0" promptText="Choisissez une date de facture..." />
+               </children>
+            </HBox>
+            <HBox prefHeight="40.0" prefWidth="281.0">
+               <children>
+                  <Label prefHeight="27.0" prefWidth="176.0" text="Remise de facture :">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="32.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../edu/voyage/image/remise.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="TFMRemisefacture" prefHeight="25.0" prefWidth="262.0" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="131.0" prefHeight="40.0" prefWidth="281.0">
+               <children>
+                  <Label prefHeight="27.0" prefWidth="160.0" text="Total facture :">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="32.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../edu/voyage/image/somme.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="TFMTotalfacture" prefHeight="31.0" prefWidth="248.0" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="196.0" prefHeight="40.0" prefWidth="281.0">
+               <children>
+                  <Label prefHeight="27.0" prefWidth="160.0" text="Type facture :">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="32.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../edu/voyage/image/gmail.png" />
+                     </image>
+                  </ImageView>
+                  <ComboBox fx:id="TFMTypefacture" prefHeight="31.0" prefWidth="250.0" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="256.0" prefHeight="40.0" prefWidth="281.0">
+               <children>
+                  <Label prefHeight="27.0" prefWidth="160.0" text="Client :">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="32.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../edu/voyage/image/prenom.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="TFMClientfacture" prefHeight="31.0" prefWidth="250.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER" layoutX="1.0" layoutY="464.0" prefHeight="30.0" prefWidth="540.0" spacing="60.0" />
+      <Button fx:id="BtnModifier" layoutX="90.0" layoutY="401.0" mnemonicParsing="false" onAction="#modifierFacture" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: linear-gradient(to right top, #FBAB7E 0%, #F7CE68 100%);" text="Modifier" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font></Button>
+      <Button fx:id="Btnsupprimer" layoutX="300.0" layoutY="401.0" mnemonicParsing="false" onAction="#supprimerFacture" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: linear-gradient(to right top, #FBAB7E 0%, #F7CE68 100%);" text="Supprimer" textFill="WHITE" />
+      <TextField fx:id="affichertype" layoutX="90.0" layoutY="361.0" opacity="0.0" text="a" />
+      <Pane layoutX="-3.0" prefHeight="46.0" prefWidth="547.0" style="-fx-background-color: grey;">
+         <children>
+            <Label fx:id="title" alignment="CENTER" layoutX="7.0" layoutY="3.0" prefHeight="40.0" prefWidth="540.0" text="Modifier/Supprimer Facture" textFill="WHITE">
+               <font>
+                  <Font name="Book Antiqua Bold" size="32.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="562.0" prefWidth="618.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="voyage.gui.BackReservationController">
+   <children>
+      <ListView fx:id="listr" layoutX="14.0" layoutY="327.0" prefHeight="208.0" prefWidth="450.0" />
+      <TextField fx:id="rech" layoutX="23.0" layoutY="292.0" />
+      <Button layoutX="183.0" layoutY="292.0" mnemonicParsing="false" onAction="#rechercherid" text="Rechercher" />
+      <Button layoutX="385.0" layoutY="291.0" mnemonicParsing="false" onAction="#tri" text="Trier" />
+      <Button layoutX="473.0" layoutY="393.0" mnemonicParsing="false" onAction="#supprimer" prefHeight="26.0" prefWidth="130.0" text="Supprimer" />
+      <Button layoutX="276.0" layoutY="291.0" mnemonicParsing="false" onAction="#refresh" prefHeight="26.0" prefWidth="82.0" text="Refresh" />
+      <Button fx:id="consulter" layoutX="4.0" layoutY="143.0" mnemonicParsing="false" onAction="#vol" prefHeight="26.0" prefWidth="186.0" text="Consuler les vols" />
+      <PieChart fx:id="chart" layoutX="212.0" layoutY="1.0" prefHeight="284.0" prefWidth="423.0" />
+   </children>
+</AnchorPane>

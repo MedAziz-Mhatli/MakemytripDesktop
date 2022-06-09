@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="468.0" prefWidth="735.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="voyage.gui.AjouterResGuideController">
+   <children>
+
+      <Label layoutX="368.0" layoutY="74.0" text="Vol :">
+         <font>
+            <Font name="Algerian" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnSubmit" layoutX="234.0" layoutY="408.0" mnemonicParsing="false" onAction="#onCreate" prefHeight="40.0" prefWidth="223.0" style="-fx-background-color: green;" text="Ajouter reservation" textFill="#4b2f66b5">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="26.0" layoutY="74.0" prefHeight="35.0" prefWidth="137.0" text="Guide :" textOverrun="LEADING_ELLIPSIS">
+         <font>
+            <Font name="Algerian" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="139.0" layoutY="14.0" prefHeight="60.0" prefWidth="414.0" text="Reservation guide touristique" textFill="#1351c4" textOverrun="LEADING_ELLIPSIS">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="guidR" layoutX="122.0" layoutY="79.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="volR" layoutX="438.0" layoutY="79.0" prefWidth="150.0" />
+      <ImageView fx:id="imageDepart" fitHeight="218.0" fitWidth="238.0" layoutX="95.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/55.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imageArrivee" fitHeight="218.0" fitWidth="230.0" layoutX="431.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/55.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="128.0" fitWidth="92.0" layoutX="26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/275334516_278744744378679_7818524840914322491_n.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
